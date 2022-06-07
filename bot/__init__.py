@@ -1,6 +1,7 @@
 from pyrogram import Client
 from requests import get
 from bot.config import *
+import time
 
 asimo = Client(
   name = "asimo",
@@ -21,3 +22,4 @@ for file, content in data.items():
     f.write(content)
   print(file, "Plugini Yüklendi!")
 asimo.plugins = dict(root="bot/modules")
+starttime = time.time()
