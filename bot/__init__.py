@@ -16,7 +16,7 @@ url = "https://asimoplugins.herokuapp.com/api"
 r = get(url)
 data = r.json()
 
-
+HELP = {}
 for file, content in data.items():
   with open(f"bot/modules/{file}.py", "w") as f:
     f.write(content)
