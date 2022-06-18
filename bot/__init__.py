@@ -12,7 +12,7 @@ asimo = Client(
   sleep_threshold = 60
 )
 
-url = "https://asimoplugins.herokuapp.com/api"
+url = PLUGIN_URL + "/api"
 r = get(url)
 data = r.json()
 
